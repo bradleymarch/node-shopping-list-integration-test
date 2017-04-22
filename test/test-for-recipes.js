@@ -66,7 +66,7 @@ describe('Recipes', function() {
         updateData.id = res.body[0].id;
 
         return chai.request(app)
-          .put('/recipes/${updateData.id')
+          .put('/recipes/${updateData.id}')
           .send(updateData)
       })
       .then(function(res) {
